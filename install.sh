@@ -1,7 +1,7 @@
 #! /bin/sh
 set -e
 
-# install s3cli
+# install awscli
 apk update
 apk add --no-cache bash py-pip py-setuptools ca-certificates openssl
 

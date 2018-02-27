@@ -1,8 +1,45 @@
 commands:
-  list-objects:
+  cp:
     help: |
-      List objects that are in your bucket.
+      Copies a local file or S3 object to another location locally or in S3.
     args:
+      - name: Origin
+        type: file, dir, string
+        required: true
+        help: |
+          A local directory/file or other S3 bucket.
+      - name: Destination
+        type: file, dir, string
+        required: true
+        help: |
+          A local directory/file or other S3 bucket.
+    kwargs:
+      - name: recursive
+        type: boolean
+        help: |
+          Command is performed on all files or objects under the specified directory or prefix.
+  ls:
+    help: |
+      List S3 objects and common prefixes under a prefix or all S3 buckets.
+    args:
+      - name: Path
+        type: string
+    kwargs:
+      - name: recursive
+        type: boolean
+      - name: page-size
+        type: int
+      - name: summarize
+        type: boolean
+        help: |
+          Displays summary information (number of objects, total size).
+  mb:
+  mv:
+  presign:
+  rb:
+  rm:
+  sync:
+  website:
 
 volume: optional
 

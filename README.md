@@ -3,10 +3,10 @@
 
 ```sh
 # usage.story
-result = s3 list-objects
+result = s3 ls s3://bucket/path
 
-for file in result.Contents
-  print file.Key
+for file in result
+  print file.path
 
 >>> filename.txt
 ```
