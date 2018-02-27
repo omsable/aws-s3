@@ -1,0 +1,14 @@
+{
+    "Contents": [
+        {
+            "LastModified": "2018-02-27T08:01:03.000Z",
+            "ETag": "\"b2a2ffc8f831073c7deaee3df7b27916\"",
+            "StorageClass": "STANDARD",
+            "Key": "README.md",
+            "Owner": {
+                "ID": "aa8f52ca3e6392003ec0651802c63be74cf26dc7177f9cbe5dc5be03dc525a04"
+            },
+            "Size": 70
+        }
+    ]
+}

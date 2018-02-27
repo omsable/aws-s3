@@ -1,0 +1,14 @@
+commands:
+  list-objects:
+    help: |
+      List objects that are in your bucket.
+    args:
+
+volume: optional
+
+env:
+  ACCESS_KEY:
+    assign_to: AWS_ACCESS_KEY_ID
+  SECRET_KEY:
+    assign_to: AWS_SECRET_ACCESS_KEY
+  BUCKET:
