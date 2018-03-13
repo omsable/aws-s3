@@ -41,11 +41,9 @@ commands:
   sync:
   website:
 
-volume: optional
+volume: true
 
 env:
-  ACCESS_KEY:
-    assign_to: AWS_ACCESS_KEY_ID
-  SECRET_KEY:
-    assign_to: AWS_SECRET_ACCESS_KEY
+  AWS_ACCESS_KEY_ID:
+  AWS_SECRET_ACCESS_KEY:
   BUCKET:
