@@ -51,6 +51,16 @@ env:
     help: The AWS secret access key part of your credentials
   aws_session_token:
     help: The session token part of your credentials (session tokens only)
+  aws_default_region:
+    help: AWS region. This variable overrides the default region of the in-use profile, if set.
+  aws_profile:
+    help: name of the CLI profile to use. This can be the name of a profile stored in a credential or config file, or default to use the default profile.
+  aws_ca_bundle:
+    help: Specify the path to a certificate bundle to use for HTTPS certificate validation.
+  aws_shared_credentials_file:
+    help: Change the location of the file that the AWS CLI uses to store access keys.
+  aws_config_file:
+    help: Change the location of the file that the AWS CLI uses to store configuration profiles.
   metadata_service_timeout:
     help: The number of seconds to wait until the metadata service request times out. This is used if you are using an IAM role to provide your credentials.
   metadata_service_num_attempts:
