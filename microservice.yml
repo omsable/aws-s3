@@ -2,49 +2,42 @@ commands:
   cp:
     help: |
       Copies a local file or S3 object to another location locally or in S3.
-    args:
-      - name: Origin
-        type: file, dir, string
+    arguments:
+      origin:
+        type: string
         required: true
         help: |
           A local directory/file or other S3 bucket.
-      - name: Destination
-        type: file, dir, string
+      destination:
+        type: string
         required: true
         help: |
           A local directory/file or other S3 bucket.
-    kwargs:
-      - name: recursive
+      recursive:
         type: boolean
-        help: |
+        help: | 
           Command is performed on all files or objects under the specified directory or prefix.
   ls:
     help: |
       List S3 objects and common prefixes under a prefix or all S3 buckets.
-    args:
-      - name: Path
+    arguments:
+      path:
         type: string
-    kwargs:
-      - name: recursive
+        required: true
+      recursive:
         type: boolean
-      - name: page-size
+      page-size:
         type: int
-      - name: summarize
+      summarize:
         type: boolean
         help: |
           Displays summary information (number of objects, total size).
-  mb:
-  mv:
-  presign:
-  rb:
-  rm:
-  sync:
-  website:
 
-volume:
+volumes:
   cache:
+    target: /cache
 
-env:
+environment:
   aws_access_key_id:
     help: The AWS access key part of your credentials
   aws_secret_access_key:
