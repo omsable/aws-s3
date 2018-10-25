@@ -1,4 +1,5 @@
-commands:
+omg: 1
+actions:
   cp:
     help: |
       Copies a local file or S3 object to another location locally or in S3.
